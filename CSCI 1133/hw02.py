@@ -117,7 +117,6 @@ def population(small, middle, big):
     '''
 
     count = 1
-    x=0
     for x in range(0,3): 
         bigNew = round(big*0.9)
         middleNew = round(middle*0.95)
@@ -135,4 +134,4 @@ def population(small, middle, big):
         print("Total population: " + str(small+middle+big))
 
         count += 1
-    x=x+1
+
