@@ -76,7 +76,7 @@ def area_circle(radius):
         The value of the circle's area 
     '''
     area = (math.pi*radius**2)
-    print(area)
+    return(area)
 
 def meters_to_feet(meters):
     '''
@@ -88,7 +88,7 @@ def meters_to_feet(meters):
         The same meter value in feet
     '''
     feet = (meters*3.28084)
-    print(feet)
+    return(feet)
 
 def minutes_to_days(minutes):
     '''
@@ -100,14 +100,14 @@ def minutes_to_days(minutes):
         The length of time inputted in minutes in days 
     '''
     days = minutes/60/24
-    print(days)
+    return(days)
 
 # Part C: Simulate changes in fish population over three weeks
 
 def population(small, middle, big):
     '''
     Purpose:
-        To simulate the changes in fish population given there size and return a numerical value of their population under certain assumptions
+        To simulate the changes in fish population given the size and return a numerical value of the population after 3 weeks of activity
     Parameter(s):
         small: number of small fish in the population
         middle: number of medium sized fish in the population
@@ -130,8 +130,7 @@ def population(small, middle, big):
 
         big = bigNew + round(((.0002)*(middleNew)*(bigNew)))
 
-        print("Week " + str(count) + " " + "Small: " + str(small) + " " + "Middle: " + str(middle) + " " + "Big: " + str(big))
-        print("Total population: " + str(small+middle+big))
+        print("Week " + str(count) + " " + "-" + " " + "Small: " + str(small) + " " + "," + " " + "Middle: " + str(middle) + " " + "," + " " + "Big: " + str(big))
 
         count += 1
-
+    return(small+middle+big)
