@@ -34,7 +34,7 @@ def sound2(weight, is_cat) :
     chonk = round(weight)
 
     if is_cat == True :
-        return 'meow'
+        return 'Meow'
     else :
         return sound(chonk)
 
