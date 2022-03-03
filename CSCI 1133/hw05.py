@@ -1,5 +1,4 @@
-import math,turtle
-from tkinter.font import names
+import math
 
 def closest(vals):
     '''
